@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/signup"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:layout_marginBottom="40dp"
+                android:textSize="38sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="Your Name"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/rounded_button"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/nameValidation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please fill your name"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:paddingStart="20dp"
+                android:hint="youremail@mail.com"
+                android:textColorHint="@color/gray"
+                android:paddingEnd="20dp"
+                android:background="@drawable/rounded_button"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/emailValidation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please fill your email"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <EditText
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:paddingStart="20dp"
+                android:hint="0812xxxxxxxx"
+                android:textColorHint="@color/gray"
+                android:paddingEnd="20dp"
+                android:background="@drawable/rounded_button"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/phoneValidation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please fill your phone number"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="**********"
+                android:textColorHint="@color/gray"
+                android:inputType="textPassword"
+                android:background="@drawable/rounded_button"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:id="@+id/passwordValidation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please fill your password"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textAlignment="center"
+                android:layout_marginStart="150px"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="150px"
+                android:text="Sign Up"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button_fill"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

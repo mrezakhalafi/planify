@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="?actionBarSize"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <TextView
+        android:id="@+id/txtActivities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task and Activities"
+        android:textColor="@color/purple"
+        android:textSize="22sp"
+        android:textFontWeight="1000"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSchedule"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:src="@drawable/schedule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtActivities"/>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSchedule" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the dates to view and add schedule"
+        android:textColor="@color/purple"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintStart_toStartOf="parent">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

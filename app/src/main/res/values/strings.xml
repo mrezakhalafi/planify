@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Planify</string>
+    <string name="title_activity_main_apps">MainApps</string>
+    <string name="title_home">Home</string>
+    <string name="title_task">Task</string>
+    <string name="title_profile">Profile</string>
+</resources>
