@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Login extends AppCompatActivity {
 
-    TextView emailValidation, passwordValidation, cheatCode;
+    TextView emailValidation, passwordValidation, cheatCode, tvForgotPassword;
     EditText txtEmail, txtPassword;
     Button btnLogin;
 
@@ -34,6 +34,7 @@ public class Login extends AppCompatActivity {
         txtEmail = findViewById(R.id.txtEmail);
         txtPassword = findViewById(R.id.txtPassword);
         cheatCode = findViewById(R.id.cheatCode);
+        tvForgotPassword = findViewById(R.id.tvForgotPassword);
 
         emailValidation = findViewById(R.id.emailValidation);
         passwordValidation = findViewById(R.id.passwordValidation);
@@ -76,6 +77,14 @@ public class Login extends AppCompatActivity {
                 txtEmail.setText("mrezakhalafi");
                 txtPassword.setText("1S2d3T4e5L");
 
+            }
+        });
+
+        tvForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forgotPassword = new Intent(Login.this, Forgot.class);
+                startActivity(forgotPassword);
             }
         });
     }
